@@ -1,0 +1,75 @@
+.structure{
+    padding: 1.2% 0;
+    display: grid;
+    grid-template-columns: 15% 55% 30%;
+    grid-template-areas: "Logo Navi Auth";
+    align-items: center;
+    font-size: 15px;
+    color: #0B132A;
+}
+
+.logoDiv {
+    grid-area: "Logo";
+}
+
+.logoDiv a {
+    text-decoration: none;
+}
+
+.header1 {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 35px;
+    margin: 0px;
+    color: #0B132A;
+}
+
+.navigationDiv {
+    grid-area: "Navi";
+    padding-right: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.navigationDiv a {
+    text-decoration: none;
+    color: #0B132A;
+}
+
+.btnDiv {
+    grid-area: "Auth";
+    padding-left: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    cursor: pointer;
+}
+
+.loginDiv, .registrationDiv {
+    padding: 2% 10%;
+    transition: all 0.1s;
+}
+
+.loginDiv:hover, .registrationDiv:hover {
+    border-bottom: 2px solid black;
+}
+
+.loginDiv a, .registrationDiv a {
+    text-decoration: none;
+    color: #0B132A;
+}
+
+.loginDiv a {
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .navigationDiv {
+        display: none;
+    }
+    .btnDiv {
+        display: none;
+    }
+}
+

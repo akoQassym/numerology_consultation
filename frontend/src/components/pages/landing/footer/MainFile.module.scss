@@ -1,0 +1,41 @@
+.structure {
+    width: 100%;
+    padding: 2% 0;
+    display: flex;
+    font-size: 16px;
+}
+
+.logoDiv {
+    display: block;
+    width: 60%;
+    padding: 3%;
+}
+
+.logoDiv a {
+    text-decoration: none;
+}
+
+.header1 {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 35px;
+    margin: 0px;
+    color: #0B132A;
+}
+
+.joinus {
+    margin: 10px 0;
+    color: #0B132A;
+}
+
+.secondColumn {
+    width: 40%;
+}
+
+.secondColumn a {
+    text-decoration: none;
+    color: #0B132A;
+}
+
+.header2 {
+    font-weight: bold;
+}

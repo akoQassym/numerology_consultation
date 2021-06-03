@@ -1,0 +1,301 @@
+.structure {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.navSection {
+    width: 17%;
+    background-color: #F9DD94;
+    position: fixed;
+    z-index: 2;
+    display: block;
+}
+
+.navOpenBtn {
+    position:absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.navOpenBtn div {
+    height: 4px;
+    background-color: black;
+    margin: 5px 0;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+.one {
+    width: 30px;
+}
+
+.two {
+    width: 20px;
+}
+
+.three {
+    width: 25px;
+}
+
+.navOpenBtn:hover div {
+    width: 30px;
+}
+
+.mainSection {
+    margin-left: 17%;
+    grid-area: "Main";
+}
+
+.sectionTitle {
+    padding: 3%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    background: url("../landing/pictures/lemons.jpg") no-repeat center;
+}
+
+.profileSection {
+    padding: 3% 17% 0 17%;
+    display: flex;
+    flex-direction: row;
+}
+
+.profileInfo {
+    /* border: black 2px solid; */
+    min-width: 50%;
+    display: flex;
+    align-content: center;
+    margin: 20px 0;
+}
+
+.profileIconBlock {
+    height: 110px;
+    width: 110px;
+    margin: 0 25px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid #E7AA0D;
+    -webkit-box-shadow: 4px 4px 69px 6px rgba(234, 220, 107, 0.2);
+    -moz-box-shadow: 4px 4px 69px 6px rgba(234, 220, 107, 0.2);
+    box-shadow: 4px 4px 69px 6px rgba(234, 220, 107, 0.2);
+}
+
+.profileIcon {
+    display:block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileInfoRow {
+    margin: 0 0 10px 10px;
+}
+
+.profileBtn {
+    margin: 10px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2% 3%;
+    cursor: pointer;
+}
+
+.profileStats {
+    /* border: black 2px solid; */
+    min-width: 50%;
+    margin: 20px 0;
+}
+
+.profileStatsRow {
+    margin: 0;
+}
+
+.profileStatsRow a{
+    text-decoration: none;
+    color: red;
+}
+
+.profileStatsInputFlexBox {
+    margin: 10px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.referralLink {
+    width: 60%;
+    padding: 5px;
+    outline: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.copyIcon {
+    margin: 0 5px;
+    width: 26px;
+    height: 26px;
+    opacity: 0.55;
+    cursor: pointer;
+}
+
+.copyIcon:hover {
+    opacity: 1;
+}
+
+.consultationsSection {
+    padding: 2%;
+}
+
+.subSectionTitle {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.responsiveTable li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.responsiveTable .tableHeader {
+    background-color: #73AA86;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+}
+
+.responsiveTable .tableRow {
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.bought {
+    opacity: 0.3;
+}
+
+.available {
+    color: #73AA86;
+}
+
+.notAvailable {
+    color: red;
+}
+
+.hcol1, .hcol2, .hcol3, .hcol4 {
+    font-weight: bold;
+}
+
+.responsiveTable .col1, .hcol1 {
+    flex-basis: 20%;
+    padding: 0 2px;
+    align-self: center;
+    font-weight: bold;
+}
+.responsiveTable .col2, .hcol2 {
+    flex-basis: 40%;
+    padding: 0 20px 0 2px;
+    align-self: center;
+}
+.responsiveTable .col3, .hcol3 {
+    flex-basis: 20%;
+    padding: 0 2px 0 20px;
+    align-self: center;
+    font-weight: bold;
+}
+.responsiveTable .col4, .hcol4 {
+    flex-basis: 20%;
+    padding: 0 2px;
+    align-self: center;
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .mainSection {
+        margin-left: 0;
+    }
+    .navSection {
+        margin-left: -50%;
+    }
+    .profileSection {
+        padding-left: 13%;
+        padding-right: 13%;;
+    }
+    .navOpenBtn {
+        display: block;
+        position: fixed;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .profileSection {
+        padding-left: 10%;
+        padding-right: 10%;;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .profileSection {
+        padding-left: 5%;
+        padding-right: 5%;;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .content {
+        flex-direction: column;
+    }
+    .priceDiv {
+        width: 50%;
+    }
+    .sectionTitle {
+        padding-top: 4%;
+        padding-bottom: 4%;
+    } 
+    .subSectionTitle, .sectionTitle {
+        font-size: 18px;
+    }
+    .profileSection {
+        flex-direction: column;
+        align-items: center;
+    }
+    .responsiveTable .table-header {
+        display: none;
+    }
+    .responsiveTable li {
+        display: block;
+    }
+    .responsiveTable  {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .responsiveTable .col1, .responsiveTable .col2, .responsiveTable .col3, .responsiveTable .col4 {
+        flex-basis: 100%;
+        padding: 5px 0;
+    }
+    .hcol1, .hcol2, .hcol3, .hcol4 {
+        flex-basis: 100%;
+        padding: 0;
+    }
+}

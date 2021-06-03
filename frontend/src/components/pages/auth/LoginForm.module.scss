@@ -1,0 +1,195 @@
+.structure, .structureSignup {
+    margin: 0;
+    padding: 0; 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: linear-gradient(to right bottom, #F9DD94, #B0C688, #73AA86);
+}
+
+.homeDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px;
+    transition: all 0.3s;
+    z-index: 2;
+}
+
+.homeDiv:hover {
+    background-color: #73AA86;
+}
+
+.authDiv {
+    background-color: white;
+    border-radius: 7px;
+    justify-self: center;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.leftDiv {
+    grid-area: "Illustration";
+    background-color: white;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    width: fit-content;
+}
+
+.illustration {
+    max-width: 450px;
+    width: 100%;
+    width: 100%;
+}
+
+.rightDiv {
+    grid-area: "Form";
+    padding: 3% 5%;
+}
+
+.logoDiv {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 10%;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.header1 {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0px 0px 10% 0px;
+    color: #0B132A;
+}
+
+.welcome {
+    font-size: 19px;
+}
+
+.formAuth, .formAuthSignup {
+    margin-top: 30px;
+}
+
+.formAuthSignup {
+    display: flex;
+    flex-direction: row;
+
+    .formAuthFlex {
+        margin: 0 10px;
+    }
+}
+
+.title {
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+}
+
+.formGroupAuth {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+label {
+    font-size: 16px;
+}
+
+.authInput {
+    color: #666;
+    display: block;
+    width: 90%;
+    background: #e6e6e6;
+    height: 30px;
+    border-radius: 25px;
+    padding: 2% 8%;
+    border: none;
+    outline: none;
+    margin: 7px 0 15px 0;
+}
+
+.loginBtn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 4% 15%;
+    cursor: pointer;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 14px;
+    background-color: #73AA86;
+    color: white;
+    transition: all 0.5s;
+    border-radius: 25px;
+    border: none;
+}
+
+.loginBtn:hover {
+    box-shadow: 0px 0px 33px -2px rgba(249,221,148,1);
+    -webkit-box-shadow: 0px 0px 33px -2px rgba(249,221,148,1);
+    -moz-box-shadow: 0px 0px 33px -2px rgba(249,221,148,1);
+}
+
+.forgotPass {
+    color: #4F5665;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.errorMsg {
+    color: rgb(177, 43, 48);
+    text-align: left;
+    margin: 0;
+    font-size: 13px;
+}
+
+.errorMsgLogin {
+    color: rgb(177, 43, 48);
+    text-align: center;
+}
+
+.error {
+    border: 1px solid rgb(177, 43, 48);
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .authDiv {
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+    }
+    .leftDiv {
+        padding-top: 15px;
+    }
+    .formAuthSignup {
+        flex-direction: column;
+    }
+    .structureSignup {
+        height: 100%;
+    }
+}

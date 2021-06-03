@@ -1,0 +1,313 @@
+.structure {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.navSection {
+    width: 17%;
+    background-color: #F9DD94;
+    position: fixed;
+    z-index: 2;
+    display: block;
+}
+
+.navOpenBtn {
+    position:absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.navOpenBtn div {
+    height: 4px;
+    background-color: black;
+    margin: 5px 0;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+.one {
+    width: 30px;
+}
+
+.two {
+    width: 20px;
+}
+
+.three {
+    width: 25px;
+}
+
+.navOpenBtn:hover div {
+    width: 30px;
+}
+
+.navAlternative {
+    position: fixed;
+    width: 100vw;
+    font-size: 20px;
+    color: #0B132A;
+    height: 100%;
+    z-index: 99;
+    background: rgba(249, 221, 148, 1);
+    transition: 0.3s ease-in-out;
+}
+
+.logoDiv2 {
+    margin: 10px 0 7% 0;
+    color: #0B132A;
+    text-decoration: none;
+}
+
+.header12 {
+    text-align: center;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 45px;
+    margin: 0px;
+}
+
+.navList2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navElement2 {
+    text-align: center;
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+.navElement2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.navElement2:hover {
+    background-color: #E7AA0D;
+}
+
+.profileIcon {
+    max-width: 70px;
+    max-height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navElement a {
+    display: block;
+    color: #0B132A;
+    padding: 5%;
+    text-decoration: none;
+}
+
+.navCloseBtn {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    margin: 20px 30px;
+    top: 0;
+    right: 0;
+    z-index: 150;
+    cursor: pointer;
+}
+
+.navCloseBtnLvl1 {
+    height: 25px;
+    width: 3px;
+    margin-left: 12px;
+    background-color: black;
+    transform: rotate(45deg);
+    Z-index: 1;
+    border-radius: 25px;
+}
+
+.navCloseBtnLvl2 {
+    height: 25px;
+    width: 3px;
+    background-color: black;
+    transform: rotate(90deg);
+    Z-index: 2;
+    border-radius: 25px;
+}
+
+.mainSection {
+    margin-left: 17%;
+    grid-area: "Main";
+}
+
+.sectionTitle {
+    padding: 3%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    background: url("../landing/pictures/lemons.jpg") no-repeat center;
+}
+
+.subSectionTitle {
+    font-weight: 500;
+    text-align: center;
+    padding: 0 15%;
+}
+
+.consultationsSection {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.priceDiv {
+    width: 20%;
+    padding: 1% 1%;
+    align-self: center;
+}
+
+.bought {
+    color: green;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+  
+.price {
+    border-radius: 15px;
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 5% 0 10% 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+}
+
+.price:hover {
+    box-shadow: 0 8px 25px 0 rgba(0,0,0,0.2);
+}
+
+.price li {
+    text-align: center;
+}
+
+.price a {
+    text-decoration: none;
+}
+
+.price .priceDivHeader {
+    padding: 20px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    font-size: 16px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.price .priceTag {
+    padding: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    width: 30%;
+    border-bottom: 5px solid #f9dd94;
+    white-space: nowrap;
+}
+
+.present, .absent {
+    text-align: left;
+    padding: 7px;
+}
+
+.absent {
+    text-decoration: line-through;
+}
+
+.present::before {
+    content: '✓ ';
+    color: #f9dd94;
+    font-weight: bold;
+}
+
+.absent::before {
+    content: '✗ ';
+}
+
+
+.buyBtn {
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 25px;
+    width: 50%;
+    cursor: pointer;
+
+    background-color: #f9dd94;
+    border: none;
+    border-radius: 5px;
+    
+    color: #0B132A;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .sectionTitle {
+        font-size: 18px;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    } 
+    .subSectionTitle {
+        padding: 0 5%;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .priceDiv {
+        width: 50%;
+    }
+    .profileSection {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .subSectionTitle {
+        padding: 0 10%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .mainSection {
+        margin-left: 0;
+    }
+    .navSection {
+        margin-left: -50%;
+    }
+    .navOpenBtn {
+        display: block;
+        position: fixed;
+    }
+}

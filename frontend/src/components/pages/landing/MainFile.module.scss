@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+.structure {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.landingStructure {
+    display: grid;
+    grid-template-rows: 0.05fr 1fr 0.1fr;
+    grid-template-areas: "Navbar" "One" "Two" "Three" "Four" "Footer";
+    max-height: 5760px;
+    border-collapse: collapse;
+}
+
+.navBar {
+    grid-area: "Navbar";
+    padding-left: 10%;
+    padding-right: 10%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(12px);
+    width: 80%;
+    position: fixed;
+    z-index: 5;
+    box-shadow: 0 0px 35px rgba(0,0,0,0.25);
+}
+
+.sectionOne {
+    grid-area: "One";
+    background: linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .8)), url("../landing/pictures/lemons.jpg") no-repeat center fixed;
+    background-size: cover;
+    padding-left: 17%;
+    padding-right: 17%;
+}
+
+.sectionTwo {
+    grid-area: "Two";
+    padding-left: 17%;
+    padding-right: 17%;
+    background-color: white;
+}
+
+.sectionThree {
+    grid-area: "Three";
+    padding-left: 17%;
+    padding-right: 17%;
+    background-color: #fffbf1;
+}
+
+.sectionFour {
+    grid-area: "Four";
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.footer {
+    grid-area: "Footer";
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #fffbf1;
+}
+
+@media only screen and (max-width: 1200px){
+    .sectionOne {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .sectionOne, .sectionTwo, .sectionThree, .sectionFour, .footer {
+        padding: 0 7px 0 7px;
+    }
+}
+
+.navOpenBtn {
+    position:absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    width: 50px;
+    cursor: pointer;
+    display: none;
+    z-index: 55;
+
+    div {
+        height: 4px;
+        background-color: black;
+        margin: 5px 0;
+        border-radius: 25px;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.one {
+    width: 30px;
+}
+
+.two {
+    width: 20px;
+}
+
+.three {
+    width: 25px;
+}
+
+.navOpenBtn:hover div {
+    width: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .navOpenBtn {
+        display: block;
+        position: fixed;
+    }
+}

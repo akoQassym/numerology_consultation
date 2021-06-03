@@ -1,0 +1,29 @@
+[
+    {
+        "model": "api.ProductsModel",
+        "pk": 1,
+        "fields": {
+            "productName": "Классический",
+            "productDescription": "Включает в себя анау мнау анау мнау и анау мнау и анау тоже есть в принципе жить можно",
+            "price": 30
+        }
+    },
+    {
+        "model": "api.ProductsModel",
+        "pk": 2,
+        "fields": {
+            "productName": "Средний",
+            "productDescription": "Включает в себя анау мнау анау мнау и анау мнау и анау тоже есть в принципе жить можно",
+            "price": 60
+        }
+    },
+    {
+        "model": "api.ProductsModel",
+        "pk": 3,
+        "fields": {
+            "productName": "Gold",
+            "productDescription": "Включает в себя анау мнау анау мнау и анау мнау и анау тоже есть в принципе жить можно",
+            "price": 120
+        }
+    }
+]

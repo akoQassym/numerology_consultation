@@ -1,0 +1,130 @@
+.structure {
+    padding: 5% 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.header {
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0B132A;
+}
+
+.about {
+    text-align: center;
+    margin: 5px 0 2% 0;
+    color: #0B132A;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.priceDiv {
+    width: 23%;
+    padding: 2% 1%;
+    align-self: center;
+}
+  
+.price {
+    border-radius: 15px;
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 5% 0 10% 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+}
+
+.price:hover {
+    box-shadow: 0 8px 25px 0 rgba(0,0,0,0.2);
+}
+
+.price li {
+    text-align: center;
+}
+
+.price a {
+    text-decoration: none;
+}
+
+.price .priceDivHeader {
+    padding: 20px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.price .priceTag {
+    padding: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    width: 30%;
+    border-bottom: 5px solid #f9dd94;
+}
+
+.present, .absent {
+    text-align: left;
+    padding: 7px;
+}
+
+.absent {
+    text-decoration: line-through;
+}
+
+.present::before {
+    content: '✓ ';
+    color: #f9dd94;
+    font-weight: bold;
+}
+
+.absent::before {
+    content: '✗ ';
+}
+
+
+.buyBtn {
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 25px;
+    width: 50%;
+    cursor: pointer;
+
+    background-color: #f9dd94;
+    border: none;
+    border-radius: 5px;
+    
+    color: #0B132A;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+    .priceDiv {
+        width: 60%;
+    }
+    .header {
+        font-size: 18px;
+    }
+    .content {
+        padding-top: 20px;
+    }
+}

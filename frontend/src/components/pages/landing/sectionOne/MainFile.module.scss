@@ -1,0 +1,92 @@
+.structure {
+    width: 100%;
+    padding: 10% 0 7% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #0B132A;
+}
+
+.leftSide {
+    text-align: left;
+    align-items: center;
+}
+
+.header1 {
+    font-size: 65px;
+    margin: 0;
+    /* margin-bottom: 10px; */
+    font-weight: bold;
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+.header2 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.header3 {
+    margin: 5px 0;
+}
+
+.rightSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+.illustration {
+    width: 90%;
+    height: 90%;
+}
+
+.pictureCredits {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    color: gray;
+    font-size: 9px;
+    padding-right: 10px;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 900px){
+    .structure {
+        flex-direction: column;
+    }
+    .rightSide {
+        align-items: left;
+    }
+    .leftSide {
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+    .illustration {
+        width: 70%;
+        height: 70%;
+        margin: 15px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .illustration {
+        width: 60%;
+        height: 60%;
+    }
+    .leftSide {
+        padding-top: 10%;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .illustration {
+        width: 55%;
+        height: 55%;
+    }
+}

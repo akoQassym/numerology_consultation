@@ -1,0 +1,288 @@
+.structure {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.navSection {
+    width: 17%;
+    background-color: #F9DD94;
+    position: fixed;
+    z-index: 2;
+    display: block;
+}
+
+.navOpenBtn {
+    position:absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.navOpenBtn div {
+    height: 4px;
+    background-color: black;
+    margin: 5px 0;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+.one {
+    width: 30px;
+}
+
+.two {
+    width: 20px;
+}
+
+.three {
+    width: 25px;
+}
+
+.navOpenBtn:hover div {
+    width: 30px;
+}
+
+.navAlternative {
+    position: fixed;
+    width: 100vw;
+    font-size: 20px;
+    color: #0B132A;
+    height: 100%;
+    z-index: 99;
+    background: rgba(249, 221, 148, 1);
+    transition: 0.3s ease-in-out;
+}
+
+.logoDiv2 {
+    margin: 10px 0 7% 0;
+    color: #0B132A;
+    text-decoration: none;
+}
+
+.header12 {
+    text-align: center;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 45px;
+    margin: 0px;
+}
+
+.navDiv2 {}
+
+.navList2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navElement2 {
+    text-align: center;
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+.navElement2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.navElement2:hover {
+    background-color: #E7AA0D;
+}
+
+.profileIconBlock {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid #E7AA0D;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 4px 4px 69px 6px rgba(234, 220, 107, 0.2);
+    -moz-box-shadow: 4px 4px 69px 6px rgba(234, 220, 107, 0.2);
+    box-shadow: 4px 4px 69px 6px rgba(234, 220, 107, 0.2);
+}
+
+.profileIcon {
+    display:block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.navElement a {
+    display: block;
+    color: #0B132A;
+    padding: 5%;
+    text-decoration: none;
+}
+
+.navCloseBtn {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    margin: 20px 30px;
+    top: 0;
+    right: 0;
+    z-index: 150;
+    cursor: pointer;
+}
+
+.navCloseBtnLvl1 {
+    height: 25px;
+    width: 3px;
+    margin-left: 12px;
+    background-color: black;
+    transform: rotate(45deg);
+    Z-index: 1;
+    border-radius: 25px;
+}
+
+.navCloseBtnLvl2 {
+    height: 25px;
+    width: 3px;
+    background-color: black;
+    transform: rotate(90deg);
+    Z-index: 2;
+    border-radius: 25px;
+}
+
+.mainSection {
+    margin-left: 17%;
+    grid-area: "Main";
+}
+
+.sectionTitle {
+    padding: 3%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    background: url("../landing/pictures/lemons.jpg") no-repeat center;
+}
+
+.settingsSection {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.settingsSubSection {
+    margin: 12% 0;
+}
+
+.settingsSectionLeft {
+    padding: 15px 30px;
+}
+
+.profileImage {
+    width: 200px;
+    height: 200px;
+}
+
+.profileDetails {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.settingsSectionRight {
+    padding: 5px 25px;
+}
+
+.settingsSectionRight form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formLabel {
+    padding: 10px 10px 5px 10px;
+}
+
+.formElementDiv {
+    padding: 0 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.userInfoInput {
+    font-size: 16px;
+    padding: 3px 5px;
+    min-width: 90%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.userInfoInputFile {
+    font-size: 16px;
+    padding: 3px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.actionDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.actionIcon {
+    margin: 3px 5px;
+    width: 17px;
+    height: inherit;
+    cursor: pointer;
+}
+
+.formBtn {
+    margin: 25px 0 0 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    padding: 5px 0;
+    cursor: pointer;
+    min-width: 95%;
+}   
+
+.errorMsg {
+    color: rgb(177, 43, 48);
+    text-align: center;
+}
+
+.error {
+    border: 1px solid rgb(177, 43, 48);
+}
+
+@media only screen and (max-width: 600px) {
+    .sectionTitle {
+        font-size: 18px;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    } 
+    .settingsSection {
+        flex-direction: column;
+        align-items: center;
+    }
+    .settingsSectionLeft {
+        border-right: none;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .mainSection {
+        margin-left: 0;
+    }
+    .navSection {
+        margin-left: -50%;
+    }
+    .navOpenBtn {
+        display: block;
+        position: fixed;
+    }
+}
